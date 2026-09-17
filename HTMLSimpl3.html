@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Практическая работа №1. Основы разметки HTML</title>
+</head>
+
+<!-- ============================================================
+     ФОН СТРАНИЦЫ: нежный градиентный цвет (можно заменить на картинку)
+     ============================================================ -->
+<body bgcolor="#FFFACD"
+      text="#2F4F4F"
+      link="#FF4500"
+      vlink="#8B008B"
+      alink="#FF1493">
+
+<!-- ============================================================
+     ЗАГОЛОВОК СТРАНИЦЫ — цветной баннер
+     ============================================================ -->
+<center>
+    <h1 style="color:#DC143C; font-family:Arial; text-shadow:2px 2px 4px #FFD700;">
+        ✨ Практическая работа № 1 ✨
+    </h1>
+    <h2 style="color:#1E90FF;">Основы разметки гипертекста HTML</h2>
+    <hr color="#FF6347" width="80%" size="4">
+</center>
+
+<!-- ============================================================
+     ПУНКТ 4. Заголовки всех шести уровней — каждый своим цветом
+     ============================================================ -->
+<h1 style="color:#FF0000;">Заголовок 1 уровня — красный</h1>
+<h2 style="color:#FF8C00;">Заголовок 2 уровня — оранжевый</h2>
+<h3 style="color:#FFD700;">Заголовок 3 уровня — золотой</h3>
+<h4 style="color:#32CD32;">Заголовок 4 уровня — зелёный</h4>
+<h5 style="color:#1E90FF;">Заголовок 5 уровня — синий</h5>
+<h6 style="color:#8A2BE2;">Заголовок 6 уровня — фиолетовый</h6>
+
+<hr color="#FF69B4">
+
+<!-- ============================================================
+     ПУНКТ 4. Изображение
+     ============================================================ -->
+<center>
+    <p style="color:#C71585; font-size:18px;">
+        <b>Пункт 4.</b> Изображение, созданное в графическом редакторе:
+    </p>
+    <img src="myimage.png" alt="Моё изображение"
+         width="220" height="160"
+         style="border:5px solid #FF6347; border-radius:15px;
+                box-shadow:5px 5px 15px rgba(0,0,0,0.3);">
+    <br/>
+</center>
+
+<!-- ============================================================
+     ПУНКТ 4. Несколько абзацев — разными цветами
+     ============================================================ -->
+<h2 style="color:#008B8B;">📄 Пункт 4. Абзацы текста</h2>
+
+<p style="color:#006400; font-size:16px;">
+    <b>Первый параграф.</b> Здесь размещён текст, выделенный тегами
+    &lt;p&gt; и &lt;/p&gt;. Абзацы автоматически отделяются друг от друга
+    благодаря отступам.
+</p>
+
+<p style="color:#8B0000; font-size:16px;">
+    <b>Второй параграф.</b> Использование тега &lt;br/&gt; для переноса строки:<br/>
+    эта строка начинается с новой строки внутри того же абзаца.
+</p>
+
+<p style="color:#4B0082; font-size:16px;">
+    <b>Третий параграф.</b> Ниже — гиперссылка на сайт Microsoft.
+</p>
+
+<!-- ============================================================
+     ПУНКТ 4-5. Гиперссылка — яркая, с эффектами
+     ============================================================ -->
+<center>
+    <a href="http://www.microsoft.com"
+       target="_blank"
+       title="Перейти на сайт Microsoft"
+       accesskey="M"
+       class="link"
+       id="link1"
+       lang="ru"
+       rel="noopener"
+       style="color:#FFFFFF; background-color:#FF4500;
+              padding:10px 20px; text-decoration:none;
+              border-radius:8px; font-weight:bold; font-size:18px;
+              box-shadow:3px 3px 8px rgba(0,0,0,0.3);">
+        🔗 Нажмите на ссылку (Microsoft)
+    </a>
+</center>
+
+<br/>
+
+<!-- ============================================================
+     ПУНКТ 4. Форматированный текст (pre)
+     ============================================================ -->
+<h2 style="color:#B22222;">💻 Пункт 4. Форматированный текст (&lt;pre&gt;)</h2>
+
+<pre style="background-color:#2F4F4F; color:#00FF7F;
+            padding:15px; border-left:6px solid #FFD700;
+            border-radius:10px; font-family:Consolas, monospace;
+            font-size:14px;">
+function hello() {
+    console.log("Привет, мир!");
+}
+
+for (let i = 0; i < 5; i++) {
+    document.write(i + " ");
+}
+</pre>
+
+<hr color="#9370DB" size="3">
+
+<!-- ============================================================
+     ПУНКТ 6. Тег <font>
+     ============================================================ -->
+<h2 style="color:#FF1493;">🎨 Пункт 6. Работа с тегом &lt;font&gt;</h2>
+
+<p style="background-color:#FFE4E1; padding:10px; border-radius:8px;">
+    <font color="red" face="Arial" size="5" title="Красный текст">
+        🔴 Красный текст Arial, размер 5
+    </font>
+</p>
+
+<p style="background-color:#E0FFFF; padding:10px; border-radius:8px;">
+    <font color="blue" face="Times New Roman" size="4">
+        🔵 Синий текст Times New Roman, размер 4
+    </font>
+</p>
+
+<p style="background-color:#E0FFE0; padding:10px; border-radius:8px;">
+    <font color="green" size="6" face="Verdana">
+        🟢 Зелёный текст Verdana, размер 6
+    </font>
+    — а это текст <b>после</b> закрытия &lt;/font&gt;, он снова обычного цвета.
+</p>
+
+<p style="color:#8B4513; font-weight:bold;">
+    Изображения, расположенные последовательно:
+</p>
+<img src="img1.png" alt="Картинка 1" width="100"
+     style="border:3px solid #FF6347; margin:5px; border-radius:8px;">
+<img src="img2.png" alt="Картинка 2" width="100"
+     style="border:3px solid #32CD32; margin:5px; border-radius:8px;">
+<img src="img3.png" alt="Картинка 3" width="100"
+     style="border:3px solid #1E90FF; margin:5px; border-radius:8px;">
+
+<hr color="#FF8C00" size="3">
+
+<!-- ============================================================
+     ПУНКТ 7. Таблица из задания
+     ============================================================ -->
+<h2 style="color:#006400;">📊 Пункт 7. Таблица из задания</h2>
+
+<table border="2" cellpadding="12" cellspacing="0"
+       style="border-color:#FFFFFF; border-collapse:collapse;
+              box-shadow:5px 5px 12px rgba(0,0,0,0.2);">
+    <tr align="center" bgcolor="#FF6347">
+        <th colspan="3" style="color:white; font-size:18px;">Это таблица</th>
+    </tr>
+    <tr align="center" bgcolor="#FFD700">
+        <td>Это</td><td>ячейки</td><td>для</td>
+    </tr>
+    <tr align="center" bgcolor="#90EE90">
+        <td>данных</td><td>в</td><td>таблице</td>
+    </tr>
+</table>
+
+<hr color="#20B2AA" size="3">
+
+<!-- ============================================================
+     ПУНКТ 8. Таблица со всеми видами списков
+     ============================================================ -->
+<h2 style="color:#8B008B;">📋 Пункт 8. Таблица со всеми видами списков</h2>
+
+<table border="2" cellpadding="15" cellspacing="0" width="100%"
+       style="border-color:#FFFFFF; border-collapse:collapse;
+              box-shadow:5px 5px 15px rgba(0,0,0,0.2);">
+    <tr>
+        <th bgcolor="#FFB6C1" style="color:#8B0000;">
+            Маркированный список (&lt;ul&gt;)
+        </th>
+        <th bgcolor="#ADD8E6" style="color:#00008B;">
+            Нумерованный список (&lt;ol&gt;)
+        </th>
+        <th bgcolor="#D8BFD8" style="color:#4B0082;">
+            Список определений (&lt;dl&gt;)
+        </th>
+    </tr>
+    <tr valign="top">
+        <td bgcolor="#FFF0F5">
+            <ul style="color:#C71585;">
+                <li>🍎 Яблоко</li>
+                <li>🍐 Груша</li>
+                <li>🍑 Слива</li>
+                <li>🍒 Вишня</li>
+            </ul>
+        </td>
+        <td bgcolor="#F0F8FF">
+            <ol style="color:#1E90FF;">
+                <li>Первый пункт</li>
+                <li>Второй пункт</li>
+                <li>Третий пункт</li>
+                <li>Четвёртый пункт</li>
+            </ol>
+        </td>
+        <td bgcolor="#F5F0FF">
+            <dl style="color:#4B0082;">
+                <dt><b>HTML</b></dt>
+                <dd>Язык разметки гипертекста</dd>
+                <dt><b>CSS</b></dt>
+                <dd>Каскадные таблицы стилей</dd>
+                <dt><b>JS</b></dt>
+                <dd>Язык сценариев JavaScript</dd>
+            </dl>
+        </td>
+    </tr>
+</table>
+
+<hr color="#FFD700" size="4">
+
+<!-- ============================================================
+     ПУНКТ 9. Итоговая статическая Web-страница
+     Тема: «Моя будущая профессия — программист»
+     ============================================================ -->
+<center>
+    <h1 style="color:#DC143C; text-shadow:2px 2px 5px #FFD700;">
+        🚀 Моя будущая профессия — программист 🚀
+    </h1>
+</center>
+<hr color="#DC143C" width="60%">
+
+<h2 style="color:#008B8B;">💡 Пояснение: заголовок первого уровня</h2>
+<p style="color:#2F4F4F;">
+    Заголовки от &lt;h1&gt; до &lt;h6&gt; задают структуру документа.
+    &lt;h1&gt; — самый важный, &lt;h6&gt; — наименее важный.
+</p>
+
+<h2 style="color:#FF6347;">💡 Пояснение: абзац текста</h2>
+<p style="color:#2F4F4F; background-color:#FFF8DC;
+          padding:10px; border-left:5px solid #FF6347; border-radius:5px;">
+    Программирование — это <b style="color:#DC143C;">творчество</b>
+    и <i style="color:#1E90FF;">логика</i> одновременно.
+    Оно позволяет создавать полезные продукты и решать сложные задачи.
+</p>
+
+<h2 style="color:#32CD32;">💡 Пояснение: изображение</h2>
+<p>Ниже размещено изображение с помощью тега &lt;img&gt;:</p>
+<img src="programmer.jpg" alt="Программист за работой"
+     width="300" height="200"
+     style="border:6px solid #32CD32; border-radius:15px;
+            box-shadow:5px 5px 15px rgba(0,0,0,0.4);">
+
+<h2 style="color:#FF8C00;">💡 Пояснение: маркированный список</h2>
+<p>Маркированный список создаётся тегом &lt;ul&gt;, каждый элемент — &lt;li&gt;.</p>
+<ul style="background-color:#FFF5EE; padding:15px 40px;
+           border-radius:10px; color:#8B4513; font-size:16px;">
+    <li>Знание языков программирования</li>
+    <li>Умение работать с алгоритмами</li>
+    <li>Английский язык</li>
+    <li>Усидчивость и внимание к деталям</li>
+</ul>
+
+<h2 style="color:#1E90FF;">💡 Пояснение: нумерованный список</h2>
+<p>Нумерованный список создаётся тегом &lt;ol&gt;.</p>
+<ol style="background-color:#F0F8FF; padding:15px 40px;
+           border-radius:10px; color:#00008B; font-size:16px;">
+    <li>Основы HTML и CSS</li>
+    <li>JavaScript</li>
+    <li>Python</li>
+    <li>Базы данных SQL</li>
+    <li>Git и системы контроля версий</li>
+</ol>
+
+<h2 style="color:#8A2BE2;">💡 Пояснение: список определений</h2>
+<p>Список определений: &lt;dl&gt; — контейнер, &lt;dt&gt; — термин, &lt;dd&gt; — определение.</p>
+<dl style="background-color:#F5F0FF; padding:15px;
+           border-radius:10px; color:#4B0082;">
+    <dt><b>Алгоритм</b></dt>
+    <dd>Последовательность действий для решения задачи</dd>
+    <dt><b>Компилятор</b></dt>
+    <dd>Программа, переводящая исходный код в машинный</dd>
+    <dt><b>Отладка</b></dt>
+    <dd>Процесс поиска и устранения ошибок в программе</dd>
+</dl>
+
+<h2 style="color:#C71585;">💡 Пояснение: гиперссылки всех видов</h2>
+
+<p style="background-color:#FFE4E1; padding:10px; border-radius:8px;">
+    <b>Внешняя ссылка:</b>
+    <a href="https://developer.mozilla.org" target="_blank"
+       style="color:#DC143C; font-weight:bold;">🌐 MDN Web Docs</a>
+</p>
+
+<p style="background-color:#E0FFFF; padding:10px; border-radius:8px;">
+    <b>Ссылка на электронную почту:</b>
+    <a href="mailto:student@example.com"
+       style="color:#1E90FF; font-weight:bold;">✉️ Написать мне письмо</a>
+</p>
+
+<p style="background-color:#E0FFE0; padding:10px; border-radius:8px;">
+    <b>Внутренняя ссылка (якорь) на начало страницы:</b>
+    <a href="#top" style="color:#32CD32; font-weight:bold;">⬆️ Наверх</a>
+</p>
+
+<p style="background-color:#FFF0F5; padding:10px; border-radius:8px;">
+    <b>Ссылка на файл:</b>
+    <a href="files/portfolio.pdf"
+       style="color:#8B008B; font-weight:bold;">📄 Скачать портфолио</a>
+</p>
+
+<h2 style="color:#006400;">💡 Пояснение: таблица</h2>
+<table border="2" cellpadding="10" cellspacing="0"
+       style="border-color:#FFFFFF; border-collapse:collapse;
+              box-shadow:5px 5px 12px rgba(0,0,0,0.2);">
+    <tr bgcolor="#FF6347">
+        <th style="color:white;">Язык</th>
+        <th style="color:white;">Назначение</th>
+        <th style="color:white;">Год создания</th>
+    </tr>
+    <tr bgcolor="#FFE4B5"><td>HTML</td><td>Разметка</td><td>1991</td></tr>
+    <tr bgcolor="#E0FFFF"><td>CSS</td><td>Стилизация</td><td>1996</td></tr>
+    <tr bgcolor="#E0FFE0"><td>JavaScript</td><td>Сценарии</td><td>1995</td></tr>
+</table>
+
+<h2 style="color:#B22222;">💡 Пояснение: форматированный текст</h2>
+<pre style="background-color:#2F4F4F; color:#FFD700;
+            padding:15px; border-left:6px solid #DC143C;
+            border-radius:10px; font-family:Consolas, monospace;
+            font-size:14px;">
+Пример кода на Python:
+
+def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n - 1)
+
+print(factorial(5))   # 120
+</pre>
+
+<h2 style="color:#4682B4;">💡 Пояснение: горизонтальная линия</h2>
+<hr color="#FF69B4" size="4">
+<p style="color:#2F4F4F;">
+    Тег &lt;hr&gt; вставляет горизонтальную разделительную линию.
+</p>
+
+<!-- Якорь для возврата наверх -->
+<a name="top"></a>
+
+<!-- ============================================================
+     ПОДВАЛ СТРАНИЦЫ
+     ============================================================ -->
+<hr color="#DC143C" size="4">
+<center>
+    <p style="color:#8B008B; font-size:14px;">
+        © 2026. Практическая работа № 1. Основы разметки HTML 🎓
+    </p>
+</center>
+
+</body>
+</html>
